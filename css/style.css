@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav {
+}
+
+.nav-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  justify-self: space-between;
+  padding: 0.6em 0;
+}
+
+.nav-wrap .nav-links {
+  padding: 0.3em 0;
+}
+
+.nav-wrap a,
+.nav-wrap img {
+  padding-right: 0.8rem;
+}
+
+.nav-wrap img {
+  height: 1rem;
+  vertical-align: middle;
+}
+
+.nav-wrap img.google-account {
+  height: 2rem;
+}
+
+.section-main main {
+  text-align: center;
+}
+
+main img.google-logo {
+  padding: 1.2em 0;
+}
+
+main .search-bar {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  border: 1px solid #dddddd;
+  border-radius: 24px;
+  padding: 2px 0;
+}
+
+main .search-bar .search-icon {
+  flex-grow: 0.8;
+  padding-left: 8px;
+}
+
+main .search-icon img {
+  margin-top: 12px;
+  height: 20px;
+}
+
+main .search-bar .search-input {
+  flex-grow: 8.5;
+}
+main .search-bar input[type="text"] {
+  text-align: left;
+  height: 44px;
+  border: none;
+  width: 95%;
+  margin-right: 20px;
+}
