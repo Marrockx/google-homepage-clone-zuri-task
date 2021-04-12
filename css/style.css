@@ -18,9 +18,8 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:visited {
-  color: #222;
+a:hover {
+  text-decoration: underline;
 }
 
 body .content-wrap {
@@ -80,6 +79,7 @@ header {
 
 .section-main main {
   text-align: center;
+  margin: 5em 0;
 }
 
 main img.google-logo {
@@ -126,36 +126,42 @@ main .search-area .button-container {
 }
 
 main .search-area .button-container button {
-  padding: 1em 0.5em;
+  padding: 0.5em 0.5em;
   margin: 1em 0.4em;
   border-radius: 4px;
   border: none;
-  width: 150px;
+  width: 130px;
   line-height: 27px;
   font-size: 1em;
   font-family: arial, sans-serif;
-  color: #a2a2a2;
-  font-weight: 500;
+  color: #222;
 }
 
 main .lang-section {
+  margin-top: 4em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   white-space: wrap;
-  font-size: 1em;
-  color: blueviolet;
+  font-size: 0.9em;
 }
 
 main .lang-section .country-lang {
   padding-left: 1em;
 }
 main .country-lang a {
-  color: blueviolet;
+  color: #1a0dab;
+  padding: 0 0.4em;
 }
 
 footer {
   width: 100%;
+  background-color: #f2f2f2;
+  color: #6f6f6f;
+}
+
+footer a {
+  color: #6f6f6f;
 }
 
 footer .country-footer {
@@ -163,27 +169,29 @@ footer .country-footer {
   align-items: center;
   justify-content: flex-start;
   flex-flow: row wrap;
-  background: #cccccc;
   height: 3rem;
-  font-size: medium;
+  font-size: 1em;
   padding: 0 20px;
-  color: #a2a2a2;
 }
 
-footer hr {
-  border: 0.1em solid #bbbbbb;
+footer .footer-info img {
+  height: 14px;
+  margin-right: 0.3em;
 }
 
 footer .footer-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
-  background: #cccccc;
   height: 3rem;
-  font-size: 1em;
-  padding: 0 20px;
-  color: #a2a2a2;
+  padding: 0 1.4em;
+  border-top: 1px solid #dadce0;
+}
+
+footer .footer-bottom .footer-nav a,
+.footer-bottom .footer-help a {
+  margin-right: 1em;
 }
 
 @media all and (max-width: 560px) {
